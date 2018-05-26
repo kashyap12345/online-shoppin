@@ -24,6 +24,7 @@
 <title>Online Shoppping - ${title}</title>
 <script>
 	window.menu = '${title}';
+	
 </script>
 <!-- Bootstrap core CSS -->
 <link href="${vendor}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -57,6 +58,12 @@
 
 		<c:if test="${userClickContact == true}">
 			<%@include file="contact.jsp"%>
+		</c:if>
+		
+		<!--  Include this section when user clicks contact -->
+
+		<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+			<%@include file="listproducts.jsp"%>
 		</c:if>
 	</div>
 	

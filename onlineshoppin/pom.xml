@@ -16,6 +16,13 @@
 	<dependencies>
 
 
+		<!-- Link to backend project -->
+		<dependency>
+			<groupId>net.kas</groupId>
+			<artifactId>shopbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 		<!-- https://mvnrepository.com/artifact/javax/javaee-api -->
 		<dependency>
 			<groupId>javax</groupId>
@@ -40,7 +47,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
+
 		<!-- JSTL -->
 
 		<dependency>
